@@ -1,0 +1,257 @@
+/* body */
+
+body{
+    font-family: arial,helvetica;
+    color: #333;
+    color: rgba(0,0,0,0.5);
+}
+.wrap{
+    margin-left: auto;
+    margin-right: auto;
+    width: 960px;
+    position: relative;
+}
+h1{
+    font-size: 6em;
+}
+p{
+    font-size: 2em;
+}
+
+.intro{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.intro p{
+    width: 50%;
+    margin: 0 auto;
+    font-size: 1.5em;
+}
+
+/* HUD */
+
+.bottomHUD{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 80px;
+    z-index: 70;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: white;
+}
+
+.bottomHUD .textCenter{
+    transition: all 0.7s ease;
+}
+
+.vertical{
+    position: fixed;
+    height: 100vh;
+    z-index: 68;
+    width: 7%;
+    background-color: white;
+    transition: all 0.2s ease;
+}
+
+.facebook{
+    width: 50px;
+    padding: 15px;
+    bottom: 0;
+    right: 18px;
+    position: absolute;
+}
+
+.hidden{
+    opacity: 0;
+}
+
+.hidden1{
+    display: none;
+}
+
+#vLeft{
+    top: 0;
+    left: 0;
+}
+
+#vRight{
+    top: 0;
+    right: 0;   
+}
+
+.textCenter{
+    text-align: center;
+    font-family: 'Proza Libre', sans-serif;
+    font-size: 25px;
+    display: inline-block;
+    margin: 26px auto;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #D58636;
+}
+
+
+.ivooxIcon{
+    width: 73px;
+    padding: 29px;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+}
+
+/* Menu */
+
+#menu li {
+    font-family: 'Proza Libre', sans-serif;
+    display:inline-block;
+    color: #000;
+    background:#fff;
+    background: rgba(255,255,255, 0.5);
+}
+#menu li.active{
+    background-color: #389c90;
+    color: #fff;
+}
+#menu li a{
+    text-decoration:none;
+    color: #000;
+}
+#menu li.active a:hover{
+    color: #000;
+    background-color: #389c90;
+}
+#menu li:hover{
+    background-color: #eee;
+}
+#menu li a,
+#menu li.active a{
+    padding: 29px 18px;
+    display:block;
+}
+#menu li.active a{
+    color: #fff;
+}
+#menu{
+    position:fixed;
+    top:0;
+    left:0;
+    height: 80px;
+    z-index: 70;
+    width: 100%;
+    padding: 0;
+    margin:0;
+    background-color: white;
+}
+
+.miniLogo{
+    max-width: 58px;
+    position: absolute;
+    top: 0;
+    right: 18px;
+    padding: 16px;
+}
+
+/* section */
+
+.section{
+    text-align:center;
+}
+
+/* section0 */
+
+#section0{
+    background-image: url(../imgs/bg1.jpg);
+    background-size: cover;  
+}
+
+.logo{
+    max-width: 50%;
+}
+
+.espacio{
+    display: inline-block;
+    color: white;
+    max-width: 62%;
+    font-size: 25px;
+    font-family: 'Proza Libre', sans-serif;
+    line-height: 150%;
+}
+
+/* slide2 */
+
+.container{
+    max-width: 85%;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.sentimiento{
+    color: #D58636;
+    padding-bottom: 50px;
+    max-width: 82%;
+    margin: 0 auto;
+    font-family: 'Proza Libre', sans-serif;
+    font-weight: 700;
+    font-size: 80px;
+}
+
+/* section1 */
+
+
+.disc-container {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.disc-item {
+    display: inline-block;
+    margin: 2%;
+    max-width: 20%;
+}
+
+/* section2 */
+
+.backdrop{
+    position: absolute;
+    width: 50%;
+    height: 100vh;
+    background-color: #00a0d2;
+}
+
+.contenedor{
+    height: 100%;
+    max-width: 85%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+}
+
+.mid{
+    max-width: 30%;
+    display: inline-block;
+}
+
+.position{
+    width: 45%;
+    float: right;
+    margin-right: 168px;
+}
+
+.ivoox{
+    background-color: white;
+    width: 100%;
+}
+
+
+
+
+
+
