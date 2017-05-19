@@ -204,15 +204,63 @@ p{
 /* section1 */
 
 
-.disc-container {
+.music-container {
     max-width: 80%;
     margin: 0 auto;
 }
 
-.disc-item {
+.disc-container{
+    position: relative;
     display: inline-block;
-    margin: 2%;
-    max-width: 20%;
+    max-width: 22%;
+    margin: 1%;
+}
+
+.disc-item {
+    max-width: 97%;
+    height: auto;
+}
+
+.disc-item:hover{
+    opacity: .3;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 1%;
+    left: 1.5%;
+    right: 0;
+    background-color: yellow;
+    overflow: hidden;
+    width: 97%;
+    height: 0;
+    transition: .5s ease;
+    box-sizing: border-box;
+}
+
+.disc-container:hover .overlay {
+    height: 100%;
+}
+
+.disc-title{
+    text-align: left;
+    margin: 7% 15%;
+    font-size: 33px;
+    font-family: 'Proza Libre', sans-serif;
+    font-weight: 700;
+}
+
+.disc-info{
+    text-align: left;
+    margin: 7% 15%; 
+    font-size: 25px;
+    font-family: 'Proza Libre', sans-serif;
+    font-weight: 700;
+}
+
+.play{
+    max-width: 30%;
+    padding: 5%;
 }
 
 /* section2 */
