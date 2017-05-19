@@ -58,7 +58,16 @@
 
         $(document).ready(function() {
 
+        	var playing = false;
+
 			$(".play").click(function(){
-				$("audio")[0].play();
+				if(!playing){
+					$("audio")[0].play();
+					playing = true;
+				}else{
+					$("audio")[0].pause();
+					playing = false;
+				}
+
 			});
 		});
