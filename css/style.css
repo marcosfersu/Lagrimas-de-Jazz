@@ -20,7 +20,7 @@ p{
 
 .intro{
     position: relative;
-    top: 50%;
+    top: 45%;
     transform: translateY(-50%);
 }
 
@@ -203,6 +203,30 @@ p{
 
 /* section1 */
 
+.music-container{
+    transition: all 1.5s ease;
+}
+
+.text-disc{
+    transition: all 0.5s ease;
+}
+
+.opacity{
+    opacity: 0;
+}
+
+.text-disc{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    margin: 0 auto;
+    opacity: 0;
+}
+
+.appear{
+    opacity: 1;
+}
 
 .music-container {
     max-width: 80%;
@@ -212,7 +236,7 @@ p{
 .disc-container{
     position: relative;
     display: inline-block;
-    max-width: 22%;
+    max-width: 23%;
     margin: 1%;
 }
 
@@ -222,7 +246,7 @@ p{
 }
 
 .disc-item:hover{
-    opacity: .3;
+    opacity: 1;
 }
 
 .overlay {
@@ -258,9 +282,25 @@ p{
     font-weight: 700;
 }
 
+.disc-pause{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    top: 0;
+    bottom: 0;
+    margin-bottom: auto;
+    margin-top: auto;
+}
+
 .play{
     max-width: 30%;
     padding: 5%;
+}
+
+.disc-principal .dipapear{
+    display: none;
 }
 
 /* section2 */
