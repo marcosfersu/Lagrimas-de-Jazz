@@ -254,7 +254,7 @@ p{
     bottom: 1%;
     left: 1.5%;
     right: 0;
-    background-color: yellow;
+    background-color: orange;
     overflow: hidden;
     width: 97%;
     height: 0;
@@ -269,7 +269,7 @@ p{
 .disc-title{
     text-align: left;
     margin: 7% 15%;
-    font-size: 33px;
+    font-size: 17px;
     font-family: 'Proza Libre', sans-serif;
     font-weight: 700;
 }
@@ -277,7 +277,7 @@ p{
 .disc-info{
     text-align: left;
     margin: 7% 15%; 
-    font-size: 25px;
+    font-size: 15px;
     font-family: 'Proza Libre', sans-serif;
     font-weight: 700;
 }

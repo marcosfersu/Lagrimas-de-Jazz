@@ -123,6 +123,7 @@
 					boton = 99;                                   //  Pone un id generico en el boton
 				}
 
+
 			});
 
 			$("#play_01").click(function(){                       //  john coltrane
@@ -245,9 +246,9 @@
 					$("audio")[boton].pause();                    //  Pone toda la muscica en pause
 					$("audio")[boton].currentTime = 0;            //  Pone todos los temas en 0
 					$(".img-play").attr("src","imgs/play.png");   //  Pone play a todos los scrolls
-					$("#5").attr("src","imgs/pause.png");         //  Pone pause al scroll especifico
 					$(".disc-pause").addClass("dipapear");        //  Saca todos los botones de pause a los disc
 					$("#pause-05").removeClass("dipapear");	;     //  Pone el pause en el disc espeficico
+					$("#5").attr("src","imgs/pause.png");         //  Pone pause al scroll especifico
 					$("audio")[5].play();					      //  Le da play al tema especifico
 					boton = 5;                                    //  Cambia la id para el boton especifico
 
@@ -258,7 +259,12 @@
 					boton = 99;                                   //  Pone un id generico en el boton
 				}
 
+			});
 
+			$("audio").on('ended', function(){
+					$(".img-play").attr("src","imgs/play.png");   //  Pone play a todos los scrolls
+					$(".disc-pause").addClass("dipapear");        //  Saca todos los botones de pause a los disc
+					boton = 99;                                   //  Pone un id generico en el boton
 			});
 
 		});
