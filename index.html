@@ -4,25 +4,29 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Lágrimas de Jazz</title>
     <meta name="description" content="Radio online de jazz" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link rel="stylesheet" type="text/css" href="css/rest.css" />
+    <link rel="stylesheet" type="text/css" href="css/mediaQuery.css" />
 
     <link href="https://fonts.googleapis.com/css?family=Proza+Libre:400,700" rel="stylesheet">
 
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
 
     <script type="text/javascript" src="js/jquery.fullPage.js"></script>
     <script type="text/javascript" src="js/javaScript.js"></script>
-
 </head>
+
+<!-- ultimo -->
 
 
 <body>
 
 <ul id="menu">
+    <p class="textCenter hidden">Lágrimas de Jazz</p>
     <li data-menuanchor="firstPage" class="active"><a href="#firstPage">Radio</a></li>
     <li data-menuanchor="secondPage"><a href="#secondPage">Musica</a></li>
     <li data-menuanchor="3rdPage"><a href="#3rdPage">Programa</a></li>
@@ -48,7 +52,7 @@
     <div class="section" id="section0">
         <div class="slide" id="slide1">
             <div class="intro active">
-                <img class="logo" src="imgs/logo 2.png"></img>
+                <img class="logo" src="imgs/logo_2.png"></img>
                 <p class="espacio">Radio online Jazzera</br>Desde San Martin de los Andes</p>
                 <div>
                     <h2>VIVO</h2>
@@ -104,7 +108,7 @@
                         <img class="disc-item" src="imgs/disco2.jpg"></imgs>    
                     </div>
                     <div class="overlay">
-                        <div class="disc-title">Cannonball Adderley</div>
+                        <div class="disc-title" id="disc-min">Cannonball Adderley</div>
                         <div class="disc-info">Somethin' Else</br>1958</div>
                         <a href="#" class="play" id="play_02">
                             <img class="img-play" id="2" src="imgs/play.png">
@@ -118,7 +122,7 @@
                         <img class="disc-item" src="imgs/disco3.jpg"></imgs>    
                     </div>
                     <div class="overlay">
-                        <div class="disc-title">The Dave Brubeck Quartet</div>
+                        <div class="disc-title" id="disc-min">The Dave Brubeck Quartet</div>
                         <div class="disc-info">Time Outn</br>1959</div>
                         <a href="#" class="play" id="play_03">                    
                             <img class="img-play" id="3" src="imgs/play.png">
@@ -132,8 +136,8 @@
                         <img class="disc-item" src="imgs/disco4.jpg"></imgs>    
                     </div>
                     <div class="overlay">
-                        <div class="disc-title">Ornette Coleman</div>
-                        <div class="disc-info">The Shape of Jazz to Come</br>1958</div>
+                        <div class="disc-title" id="disc-min">Ornette Coleman</div>
+                        <div class="disc-info" id="disc-min">The Shape of Jazz to Come</br>1958</div>
                         <a href="#" class="play" id="play_04">
                             <img class="img-play" id="4" src="imgs/play.png">
                         </a>
@@ -168,7 +172,7 @@
             <div class="contenedor">
                <div class="mid intro">
                    <div class="info">
-                        <p>Este es el programa que estuviste buscando  para meterte en el loco mundo musical ¿Por qué? Porque  El Jazz busca incomodarte todo el tiempo, llenarte de preguntas, sacarte la pastilla que te anestesia los sentidos… por eso es un mundo de locos,  un mundo que te desorienta, no entendes pero de repente  te encontras moviendo el pie lo más rápido posible y solo hay un acompasado movimiento de una batería que no entiende de limites lógicos y naturales , busca   incomprensiblemente meterte en el mundo de la fantasía
+                        <p class="info-p">Este es el programa que estuviste buscando  para meterte en el loco mundo musical ¿Por qué? Porque  El Jazz busca incomodarte todo el tiempo, llenarte de preguntas, sacarte la pastilla que te anestesia los sentidos… por eso es un mundo de locos,  un mundo que te desorienta, no entendes pero de repente  te encontras moviendo el pie lo más rápido posible y solo hay un acompasado movimiento de una batería que no entiende de limites lógicos y naturales , busca   incomprensiblemente meterte en el mundo de la fantasía
                         Afrontalo, el jazz es para vos, te estaba esperando…
                         </p>
                     </div>

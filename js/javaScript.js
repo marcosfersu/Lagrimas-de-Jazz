@@ -94,10 +94,58 @@
 // });
 
         
-        $(document).ready(function() {                            //  Botones de los disco
-        var boton = 99;                                           //  Pone un id generico en el boton
+    $(document).ready(function() {                         
+        
+        window.playStatus = {
+        	currentlyPlaying: false,
+        	indexPlaying: null,
+        	playTime: null
+        }                                           
+        
 
+			$('.disc-container').click(function(){
+				var index = $(this).index();
+				if (!playStatus.currentlyPlaying){
+					playStatus.currentlyPlaying = true;
+					console.log("0");
+					playSong(index);
 
+				}else {
+
+					if(index === playStatus.indexPlaying){
+					playStatus.currentlyPlaying = false;
+					$("audio")[playStatus.indexPlaying].pause();
+					$(".img-play").eq(index).attr("src","imgs/play.png");        
+					$(".disc-pause").addClass("dipapear");
+					$(".img-play").attr("src","imgs/play.png"); 
+					console.log("1");
+
+					} else {
+						console.log("2");
+						$("audio")[playStatus.indexPlaying].pause()
+						$("audio")[playStatus.indexPlaying].currentTime = 0;
+						$(".disc-pause").addClass("dipapear");
+						$(".img-play").attr("src","imgs/play.png");
+						playSong(index)	
+					}
+				}
+
+				function playSong(indexNumber) {
+					$("audio")[indexNumber].play();
+					playStatus.indexPlaying = indexNumber;
+					$(".img-play").eq(indexNumber).attr("src","imgs/pause.png");
+					$(".disc-pause").eq(indexNumber).removeClass("dipapear");
+				}
+			});			
+
+			$("audio").on('ended', function(){
+				$(".img-play").attr("src","imgs/play.png");   
+				$(".disc-pause").addClass("dipapear");        
+				playStatus.currentlyPlaying = false;
+			});
+	});
+/*
+        var boton = 99;
 			$("#play_00").click(function(){                       //  Miles Davis
 					
 				if(boton == 99){                                  //  - Si ningun tema está sonando
@@ -267,4 +315,6 @@
 					boton = 99;                                   //  Pone un id generico en el boton
 			});
 
-		});
+*/
+
+

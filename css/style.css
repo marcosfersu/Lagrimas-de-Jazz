@@ -1,3 +1,4 @@
+
 /* body */
 
 body{
@@ -20,7 +21,7 @@ p{
 
 .intro{
     position: relative;
-    top: 45%;
+    top: 50%;
     transform: translateY(-50%);
 }
 
@@ -31,6 +32,10 @@ p{
 }
 
 /* HUD */
+
+ul .textCenter{
+	display: none;
+}
 
 .bottomHUD{
     position: fixed;
@@ -238,6 +243,7 @@ p{
     display: inline-block;
     max-width: 23%;
     margin: 1%;
+    cursor: pointer;
 }
 
 .disc-item {
@@ -330,12 +336,19 @@ p{
 .position{
     width: 45%;
     float: right;
-    margin-right: 168px;
+    margin-right: 7%;
 }
 
 .ivoox{
     background-color: white;
     width: 100%;
+}
+ 
+.intro .info-p{
+	margin: 0 auto;
+    font-size: 1.2em;
+    width: 100%;
+	font-weight: 700;
 }
 
 
