@@ -1,3 +1,8 @@
+.wrapn{
+    max-width: 960px;      
+}
+
+
 
 /* body */
 
@@ -208,8 +213,14 @@ ul .textCenter{
 
 /* section1 */
 
-.music-container{
+.music-container {
     transition: all 1.5s ease;
+    margin: auto;
+    display: flex;
+    flex-flow: wrap row; 
+    height: 91%;
+    justify-content: center;
+    align-items: center;      
 }
 
 .text-disc{
@@ -233,21 +244,16 @@ ul .textCenter{
     opacity: 1;
 }
 
-.music-container {
-    max-width: 80%;
-    margin: 0 auto;
-}
-
 .disc-container{
     position: relative;
     display: inline-block;
-    max-width: 23%;
+    max-width: 30%;
     margin: 1%;
     cursor: pointer;
 }
 
 .disc-item {
-    max-width: 97%;
+    max-width: 100%;
     height: auto;
 }
 
@@ -256,16 +262,25 @@ ul .textCenter{
 }
 
 .overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
-    bottom: 1%;
-    left: 1.5%;
-    right: 0;
-    background-color: orange;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
     overflow: hidden;
-    width: 97%;
-    height: 0;
+    width: 100%;
+    height: 100%;
     transition: .5s ease;
     box-sizing: border-box;
+}
+
+.hover{
+    opacity: 0;
+}
+
+.hover:hover{
+    opacity: 1;
 }
 
 .disc-container:hover .overlay {
@@ -301,8 +316,13 @@ ul .textCenter{
 }
 
 .play{
-    max-width: 30%;
-    padding: 5%;
+    display: flex;
+    width: 10em;
+}
+
+.play img{
+    width: 60%;
+    margin: auto;    
 }
 
 .disc-principal .dipapear{
@@ -351,6 +371,46 @@ ul .textCenter{
 	font-weight: 700;
 }
 
+.abiertas {
+    width: 14em;
+    background-color: gray;
+    position: absolute;
+    left: -12em;
+    transition: all .3s ease;
+    transform: scale(1, 1);
+    transform-origin: 100% 0;
+    box-shadow: 0.1em 0.1em 0.6em #888888;
+    z-index: 2;
+}
+
+a .del-todo {
+    transition: all .3s ease;
+    transform: scale(0, 0);
+    transform-origin: 100% 0;
+}
+
+
+.texto-opciones {
+    opacity: 1;
+    transition: all .3s ease;
+    transition-delay: .2s;
+}
+
+.hidden {
+    opacity: 0;
+    transition: all .3s ease;
+}
+
+.informacion {
+    position: absolute;
+    width: 2em;
+    top: 10px;
+    right: 10px;
+}
+
+.informacion img{
+    width: 100%;
+}
 
 
 
