@@ -115,14 +115,16 @@
 					if(index === playStatus.indexPlaying){
 					playStatus.currentlyPlaying = false;
 					$("audio")[playStatus.indexPlaying].pause();
-					$(".img-play").eq(index).attr("src","imgs/play-button.svg");        
+					$(".img-play").eq(index).attr("src","imgs/play-button.svg");
+					$(".overlay").eq(index).removeClass("hover-pause");	
 					console.log("1");
 
 					} else {
 						console.log("2");
 						$("audio")[playStatus.indexPlaying].pause()
 						$("audio")[playStatus.indexPlaying].currentTime = 0;
-						$(".img-play").attr("src","imgs/play-button.svg");
+						$(".img-play").attr("src","imgs/play-button.svg");				       
+						$(".overlay").removeClass("hover-pause");					 
 						playSong(index)	
 					}
 				}
@@ -131,6 +133,7 @@
 					$("audio")[indexNumber].play();
 					playStatus.indexPlaying = indexNumber;
 					$(".img-play").eq(indexNumber).attr("src","imgs/pause-button.svg");
+					$(".overlay").eq(indexNumber).addClass("hover-pause");
 				}
 			});			
 

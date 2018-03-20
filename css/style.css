@@ -1,5 +1,5 @@
 .wrapn{
-    max-width: 960px;      
+    max-width: 1500px;      
 }
 
 
@@ -7,7 +7,7 @@
 /* body */
 
 body{
-    font-family: arial,helvetica;
+    font-family: 'Roboto', sans-serif;
     color: #333;
     color: rgba(0,0,0,0.5);
 }
@@ -95,7 +95,7 @@ ul .textCenter{
 
 .textCenter{
     text-align: center;
-    font-family: 'Proza Libre', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 25px;
     display: inline-block;
     margin: 26px auto;
@@ -117,7 +117,7 @@ ul .textCenter{
 /* Menu */
 
 #menu li {
-    font-family: 'Proza Libre', sans-serif;
+    font-family: 'Roboto', sans-serif;
     display:inline-block;
     color: #000;
     background:#fff;
@@ -188,7 +188,7 @@ ul .textCenter{
     color: white;
     max-width: 62%;
     font-size: 25px;
-    font-family: 'Proza Libre', sans-serif;
+    font-family: 'Roboto', sans-serif;
     line-height: 150%;
 }
 
@@ -206,7 +206,7 @@ ul .textCenter{
     padding-bottom: 50px;
     max-width: 82%;
     margin: 0 auto;
-    font-family: 'Proza Libre', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 80px;
 }
@@ -219,7 +219,7 @@ ul .textCenter{
     display: flex;
     flex-flow: wrap row; 
     height: 91%;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;      
 }
 
@@ -248,8 +248,8 @@ ul .textCenter{
     position: relative;
     display: inline-block;
     max-width: 30%;
-    margin: 1%;
     cursor: pointer;
+    margin: 5px;
 }
 
 .disc-item {
@@ -283,6 +283,10 @@ ul .textCenter{
     opacity: 1;
 }
 
+.hover-pause{
+    opacity: 1;
+}
+
 .disc-container:hover .overlay {
     height: 100%;
 }
@@ -291,7 +295,7 @@ ul .textCenter{
     text-align: left;
     margin: 7% 15%;
     font-size: 17px;
-    font-family: 'Proza Libre', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 700;
 }
 
@@ -299,7 +303,7 @@ ul .textCenter{
     text-align: left;
     margin: 7% 15%; 
     font-size: 15px;
-    font-family: 'Proza Libre', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 700;
 }
 
@@ -412,7 +416,29 @@ a .del-todo {
     width: 100%;
 }
 
+.discs-container{
+    max-width: 60%;
+}
+.parrafe-disc{
+    width: 29%;
+    color: black;
+    font-size: 1em;
+}
 
+.parrafe-disc h3{
+    font-size: 2.1em;
+    font-weight: 700;
+    margin-bottom: 1em;    
+}
 
+.parrafe-disc p{
+    font-size: 1.3em;
+    margin-bottom: 1em;
+}
 
+.container-parrafo-disc{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
